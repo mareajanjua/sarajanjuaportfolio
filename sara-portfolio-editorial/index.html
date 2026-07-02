@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" as="image" href="assets/optimized/hero.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -25,7 +26,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <a class="nav-cta" href="#contact">Let's Talk <span></span></a>
-    <button class="menu-btn" aria-label="Open menu"><span></span><span></span></button>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-panel"><span></span><span></span></button>
   </header>
 
   <main>
@@ -36,7 +37,7 @@
         <a class="hero-talk" href="#contact">Let's talk <span></span></a>
       </div>
       <figure class="hero-portrait reveal delay-1">
-        <img src="assets/hero.png" alt="Sara Janjua portfolio hero image" fetchpriority="high" decoding="async">
+        <img src="assets/optimized/hero.jpg" alt="Sara Janjua portfolio hero image" width="1237" height="1272" fetchpriority="high" decoding="async">
       </figure>
     </section>
 
@@ -45,7 +46,7 @@
       <div class="about-grid">
         <h2 class="section-title reveal">Designing useful systems with an editorial eye.</h2>
         <div class="about-copy reveal delay-1">
-          <img class="about-image" src="assets/about.png" alt="Sara Janjua about section image" loading="lazy" decoding="async">
+          <img class="about-image" src="assets/optimized/about.jpg" alt="Sara Janjua about section image" width="1200" height="900" loading="lazy" decoding="async">
           <p>I'm a UI/UX Designer and Full-Stack Developer who turns ideas into clean, modern, functional digital experiences.</p>
           <p>I bridge design and development so the work is not only polished visually, but also structured, scalable, and ready to build.</p>
           <a class="text-cta" href="assets/Sara Tayyab Janjua CV updated.pdf" download="Sara-Tayyab-Janjua-CV.pdf">Download CV <span></span></a>
@@ -69,22 +70,22 @@
         </div>
         <div class="case-grid">
           <article class="case-card">
-            <img src="assets/PalTu.png" alt="PalTu UI case study preview" loading="lazy" decoding="async">
+            <img src="assets/optimized/PalTu.jpg" alt="PalTu UI case study preview" width="1254" height="1254" loading="lazy" decoding="async">
             <h3>PalTu</h3>
             <p>AI pet recognition, stray adoption platform, freemium flow (2026)</p>
           </article>
           <article class="case-card">
-            <img src="assets/casaimg.png" alt="Casa furniture e-commerce case study preview" loading="lazy" decoding="async">
+            <img src="assets/optimized/casaimg.jpg" alt="Casa furniture e-commerce case study preview" width="733" height="1100" loading="lazy" decoding="async">
             <h3><a href="https://musical-cannoli-8ad505.netlify.app/" target="_blank" rel="noopener">Casa</a></h3>
             <p>E-commerce furniture store interface and shopping flow (2026)</p>
           </article>
           <article class="case-card">
-            <img src="assets/riwaayat.png" alt="Riwayat restaurant e-commerce case study preview" loading="lazy" decoding="async">
+            <img src="assets/optimized/riwaayat.jpg" alt="Riwayat restaurant e-commerce case study preview" width="1280" height="960" loading="lazy" decoding="async">
             <h3><a href="https://aqua-objects-541773.framer.app/" target="_blank" rel="noopener">Riwayat</a></h3>
             <p>Restaurant e-commerce experience for food ordering, cart, and checkout (2025)</p>
           </article>
           <article class="case-card">
-            <img src="assets/Ringo AI.png" alt="Ringo AI UI case study preview" loading="lazy" decoding="async">
+            <img src="assets/optimized/Ringo-AI.jpg" alt="Ringo AI UI case study preview" width="960" height="1200" loading="lazy" decoding="async">
             <h3>Ringo AI</h3>
             <p>AI conversations, smart task flow, and mobile product UX</p>
           </article>
@@ -98,27 +99,27 @@
         </div>
         <div class="case-grid software-cases">
           <article class="case-card">
-            <img src="assets/Ringo AI.png" alt="Ringo AI software project preview" loading="lazy" decoding="async">
+            <img src="assets/optimized/Ringo-AI.jpg" alt="Ringo AI software project preview" width="960" height="1200" loading="lazy" decoding="async">
             <h3>Ringo AI</h3>
             <p>AI system that helps find phones and connected devices</p>
           </article>
           <article class="case-card">
-            <img src="assets/meezanbank.png" alt="Meezan Bank backend project preview" loading="lazy" decoding="async">
+            <img src="assets/optimized/meezanbank.jpg" alt="Meezan Bank backend project preview" width="1280" height="960" loading="lazy" decoding="async">
             <h3>Meezan Bank</h3>
             <p>Backend development and system integration</p>
           </article>
           <article class="case-card">
-            <img src="assets/KIA.png" alt="KIA dealer management system preview" loading="lazy" decoding="async">
+            <img src="assets/optimized/KIA.jpg" alt="KIA dealer management system preview" width="1280" height="960" loading="lazy" decoding="async">
             <h3>KIA</h3>
             <p>Backend development for dealer management systems</p>
           </article>
           <article class="case-card">
-            <img src="assets/safecitykarachi.jpg" alt="Safe City Karachi e-challan system preview" width="900" height="600" loading="lazy" decoding="async">
+            <img src="assets/safecitykarachi.jpg" alt="Safe City Karachi e-challan system preview" width="500" height="500" loading="lazy" decoding="async">
             <h3>Safe City Karachi</h3>
             <p>Police department e-challan system with pictures and forwarding workflow</p>
           </article>
           <article class="case-card">
-            <img src="assets/safecitypeshawar.jpg" alt="Safe City Peshawar e-challan system preview" width="900" height="600" loading="lazy" decoding="async">
+            <img src="assets/safecitypeshawar.jpg" alt="Safe City Peshawar e-challan system preview" width="736" height="736" loading="lazy" decoding="async">
             <h3>Safe City Peshawar</h3>
             <p>Police department e-challan system with pictures and forwarding workflow</p>
           </article>
@@ -273,7 +274,7 @@
     </section>
   </main>
 
-  <div class="mobile-panel" aria-hidden="true">
+  <div class="mobile-panel" id="mobile-panel" aria-hidden="true">
     <a href="#about">About</a>
     <a href="#work">Work</a>
     <a href="#credentials">Toolkit</a>
@@ -284,6 +285,6 @@
 
   <a class="arrow-up" href="#top" aria-label="Back to top"><span></span></a>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
